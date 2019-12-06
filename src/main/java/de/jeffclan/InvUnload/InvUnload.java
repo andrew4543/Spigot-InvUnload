@@ -89,9 +89,9 @@ public class InvUnload extends JavaPlugin implements CommandExecutor, Listener {
 
 	UpdateChecker updateChecker;
 
-	private int defaultChestRadius = 10;
+	private int defaultChestRadius = plugin.getConfig().getInt("default-chest-radius",10);
 
-	private int maxChestRadius = 20;
+	private int maxChestRadius = plugin.getConfig().getInt("max-chest-radius",20);
 
 	private int particleCount = 100;
 	private Particle particleType = Particle.SPELL_WITCH;
